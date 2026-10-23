@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandini Silks | Royal Silk Sarees & Designer Bridal Lookbook</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        maroon: {
+                            800: '#5A0B1A',
+                            900: '#3D000C',
+                            950: '#260007',
+                        },
+                        gold: {
+                            300: '#FCE082',
+                            400: '#E2BD56',
+                            500: '#D4AF37',
+                            600: '#AA820A',
+                            700: '#856404',
+                        },
+                        silk: {
+                            plum: '#4A154B',
+                            emerald: '#0B4F3A',
+                            royal: '#0A2540',
+                            magenta: '#8B008B'
+                        }
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        vibes: ['Great Vibes', 'cursive'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF1B0 0%, #D4AF37 50%, #AA820A 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-gradient {
+            border-image: linear-gradient(to right, #AA820A, #FCE082, #AA820A) 1;
+        }
+        .bg-pattern {
+            background-color: #260007;
+            background-image: radial-gradient(#D4AF37 0.75px, transparent 0.75px), radial-gradient(#D4AF37 0.75px, #260007 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            background-opacity: 0.08;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #260007;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 4px;
+        }
+        .shimmer {
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(212,175,55,0.2) 50%, rgba(255,255,255,0) 100%);
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite;
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+    </style>
+</head>
+<body class="bg-maroon-950 text-amber-50 font-sans antialiased selection:bg-gold-500 selection:text-maroon-950">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-maroon-900 via-gold-600 to-maroon-900 text-maroon-950 text-xs md:text-sm py-2 px-4 text-center font-medium tracking-widest border-b border-gold-400/30 flex items-center justify-between">
+        <span class="hidden md:inline text-maroon-950 font-bold"><i class="fa-solid fa-crown mr-2"></i>Handcrafted Heritage Since 1984</span>
+        <span class="w-full md:w-auto text-center font-bold uppercase tracking-wider">✨ New Bridal Kanjeevaram Collection 2026 Is Now Live</span>
+        <a href="https://wa.me/919876543210?text=Hello%20Nandini%20Silks,%20I%20would%20like%20to%20book%20a%20private%20bridal%20appointment." target="_blank" class="hidden md:inline-flex items-center gap-1 bg-maroon-950 text-gold-400 px-3 py-0.5 rounded-full text-xs font-semibold hover:bg-gold-500 hover:text-maroon-950 transition-all">
+            <i class="fa-brands fa-whatsapp text-emerald-400"></i> Book VIP Trial
+        </a>
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="sticky top-0 z-40 bg-maroon-950/95 backdrop-blur-md border-b border-gold-500/20 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+                    <div class="w-12 h-12 rounded-full border-2 border-gold-400 flex items-center justify-center bg-gradient-to-br from-maroon-800 to-maroon-950 shadow-inner">
+                        <span class="font-vibes text-3xl text-gold-400">N</span>
+                    </div>
+                    <div>
+                        <h1 class="font-cinzel text-xl sm:text-2xl font-bold tracking-widest gold-gradient-text uppercase">Nandini Silks</h1>
+                        <p class="text-[10px] tracking-[0.3em] text-gold-400/80 uppercase font-light">Pure Handloom Weaves</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex items-center space-x-8 font-cinzel text-xs tracking-widest uppercase">
+                    <a href="#about" class="text-amber-100 hover:text-gold-400 transition-colors">Heritage</a>
+                    <a href="#lookbook" class="text-amber-100 hover:text-gold-400 transition-colors">Lookbook</a>
+                    <a href="#collections" class="text-amber-100 hover:text-gold-400 transition-colors">Collections</a>
+                    <a href="#craft" class="text-amber-100 hover:text-gold-400 transition-colors">Silk Craft</a>
+                    <a href="#contact" class="text-amber-100 hover:text-gold-400 transition-colors">Boutique</a>
+                </div>
+
+                <!-- Quick Action Buttons -->
+                <div class="flex items-center gap-4">
+                    <button onclick="openWishlistModal()" class="relative p-2 text-gold-400 hover:text-gold-300 transition-colors" title="View Wishlist">
+                        <i class="fa-solid fa-heart text-xl"></i>
+                        <span id="wishlist-badge" class="absolute -top-1 -right-1 bg-gold-500 text-maroon-950 text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-md">0</span>
+                    </button>
+
+                    <a href="https://wa.me/919876543210?text=Hello%20Nandini%20Silks,%20I%20want%20to%20inquire%20about%20saree%20designs." target="_blank" class="hidden sm:flex items-center gap-2 bg-gradient-to-r from-gold-500 to-gold-600 text-maroon-950 px-4 py-2.5 rounded-full font-semibold text-xs uppercase tracking-wider hover:from-gold-400 hover:to-gold-500 shadow-lg hover:shadow-gold-500/20 transition-all duration-300">
+                        <i class="fa-brands fa-whatsapp text-lg text-emerald-900"></i>
+                        <span>WhatsApp VIP</span>
+                    </a>
+
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden p-2 text-gold-400 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-maroon-900 border-b border-gold-500/20 px-4 pt-4 pb-6 space-y-4 font-cinzel text-xs tracking-wider">
+            <a href="#about" onclick="toggleMobileMenu()" class="block text-amber-100 hover:text-gold-400 py-1">Heritage</a>
+            <a href="#lookbook" onclick="toggleMobileMenu()" class="block text-amber-100 hover:text-gold-400 py-1">Lookbook 2026</a>
+            <a href="#collections" onclick="toggleMobileMenu()" class="block text-amber-100 hover:text-gold-400 py-1">Collections</a>
+            <a href="#craft" onclick="toggleMobileMenu()" class="block text-amber-100 hover:text-gold-400 py-1">Silk Craft</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block text-amber-100 hover:text-gold-400 py-1">Visit Boutique</a>
+            <a href="https://wa.me/919876543210" target="_blank" class="flex items-center justify-center gap-2 bg-gold-500 text-maroon-950 font-bold py-2.5 rounded-md uppercase tracking-widest mt-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Direct Consultation
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Showcase Carousel Section -->
+    <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden border-b border-gold-500/30">
+        <!-- Background Overlay Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=1920" 
+                 alt="Luxury Silk Saree Background" 
+                 class="w-full h-full object-cover object-center opacity-30 scale-105 transition-transform duration-10000 ease-out transform" id="hero-bg">
+            <div class="absolute inset-0 bg-gradient-to-t from-maroon-950 via-maroon-950/70 to-maroon-950/30"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center py-20 flex flex-col items-center">
+            <!-- Decorative Motif -->
+            <div class="flex items-center gap-4 my-2">
+                <div class="h-[1px] w-12 bg-gradient-to-r from-transparent to-gold-400"></div>
+                <i class="fa-solid fa-gem text-gold-400 text-sm"></i>
+                <div class="h-[1px] w-12 bg-gradient-to-l from-transparent to-gold-400"></div>
+            </div>
+
+            <p class="font-vibes text-4xl sm:text-5xl lg:text-6xl text-gold-300 mb-2">The Golden Era of Weaving</p>
+            <h2 class="font-cinzel text-3xl sm:text-5xl lg:text-7xl font-extrabold text-white tracking-wider uppercase leading-tight mb-6">
+                Royal Kanjeevaram <br><span class="gold-gradient-text">& Pure Banarasi</span>
+            </h2>
+            <p class="max-w-2xl text-amber-100/90 text-sm sm:text-base font-light leading-relaxed mb-8">
+                Immerse yourself in four decades of authentic Indian craftsmanship. Hand-woven with 100% pure zari and silk mark certified purity, crafted for brides and festive celebrations.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+                <a href="#collections" class="w-full sm:w-auto bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-maroon-950 font-cinzel font-bold px-8 py-4 rounded-full text-xs uppercase tracking-widest shadow-xl hover:shadow-gold-500/30 transition-all duration-300 transform hover:-translate-y-0.5">
+                    Explore Lookbook 2026
+                </a>
+                <a href="#about" class="w-full sm:w-auto border border-gold-400/50 hover:border-gold-400 text-gold-300 hover:text-white font-cinzel font-semibold px-8 py-4 rounded-full text-xs uppercase tracking-widest backdrop-blur-sm transition-all duration-300">
+                    Our Heritage Story
+                </a>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-gold-500/20 text-xs font-cinzel text-gold-300/80">
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-certificate text-gold-400 text-lg"></i>
+                    <span>Silk Mark Certified</span>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-hands-holding-child text-gold-400 text-lg"></i>
+                    <span>Pure Zari Weaves</span>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-truck-fast text-gold-400 text-lg"></i>
+                    <span>Worldwide Shipping</span>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-[#000] fa-video text-gold-400 text-lg"></i>
+                    <span>Live Video Shopping</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage & Craft Story Section -->
+    <section id="about" class="py-20 bg-maroon-900/50 relative border-b border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Image Grid -->
+                <div class="relative">
+                    <div class="relative z-10 rounded-2xl overflow-hidden border-2 border-gold-400/30 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&q=80&w=1000" alt="Saree Weaver Craftsmanship" class="w-full h-[450px] object-cover">
+                    </div>
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-6 -right-6 z-20 bg-maroon-950 border-2 border-gold-400 p-6 rounded-2xl shadow-2xl hidden sm:block max-w-xs">
+                        <p class="font-vibes text-3xl text-gold-400">42 Years</p>
+                        <p class="text-xs font-cinzel tracking-wider text-amber-100 uppercase">Preserving Handloom Excellence</p>
+                    </div>
+                    <div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-gold-400"></div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-gold-500/30 bg-maroon-950 text-gold-400 text-xs uppercase tracking-widest">
+                        <i class="fa-solid fa-ribbon"></i> Uncompromising Authenticity
+                    </div>
+                    <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white tracking-wide leading-snug">
+                        Woven With Tradition, <br><span class="gold-gradient-text">Designed for Royalty</span>
+                    </h2>
+                    <p class="text-amber-100/80 text-sm sm:text-base leading-relaxed">
+                        At <strong class="text-gold-300">Nandini Silks</strong>, every saree tells an opulent story of art, tradition, and Indian heritage. Handcrafted by master weavers in Kanchipuram and Varanasi, our silks are spun from mulberry silk threads and layered with genuine gold and silver zari motifs.
+                    </p>
+                    <p class="text-amber-100/80 text-sm sm:text-base leading-relaxed">
+                        Whether you are preparing for a grand wedding, a festive puja, or a heirloom gift, our curated lookbook highlights timeless designs tailored for every memorable occasion.
+                    </p>
+
+                    <div class="grid grid-cols-3 gap-4 pt-4 border-t border-gold-500/20 text-center font-cinzel">
+                        <div class="p-3 bg-maroon-950/60 rounded-xl border border-gold-500/10">
+                            <span class="block text-2xl font-bold text-gold-400">100%</span>
+                            <span class="text-[10px] text-amber-200 uppercase tracking-widest">Pure Mulberry Silk</span>
+                        </div>
+                        <div class="p-3 bg-maroon-950/60 rounded-xl border border-gold-500/10">
+                            <span class="block text-2xl font-bold text-gold-400">500+</span>
+                            <span class="text-[10px] text-amber-200 uppercase tracking-widest">Bridal Patterns</span>
+                        </div>
+                        <div class="p-3 bg-maroon-950/60 rounded-xl border border-gold-500/10">
+                            <span class="block text-2xl font-bold text-gold-400">4.9★</span>
+                            <span class="text-[10px] text-amber-200 uppercase tracking-widest">Client Reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lookbook & Filterable Gallery Section -->
+    <section id="collections" class="py-20 relative bg-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <p class="font-vibes text-3xl text-gold-300 mb-1">Curated Lookbook 2026</p>
+                <h2 class="font-cinzel text-3xl sm:text-5xl font-extrabold text-white tracking-widest uppercase mb-4">
+                    Royal Saree Collection
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto mb-6"></div>
+                <p class="text-amber-100/80 text-sm">
+                    Filter through our authentic weave categories. Tap any saree to view full details, high-res drape previews, or request a direct WhatsApp booking.
+                </p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mb-12" id="filter-buttons">
+                <button onclick="filterGallery('all')" class="filter-btn active px-5 py-2.5 rounded-full font-cinzel text-xs font-semibold uppercase tracking-wider transition-all duration-300 bg-gold-500 text-maroon-950 shadow-lg">
+                    All Collections
+                </button>
+                <button onclick="filterGallery('kanjeevaram')" class="filter-btn px-5 py-2.5 rounded-full font-cinzel text-xs font-semibold uppercase tracking-wider transition-all duration-300 border border-gold-500/30 text-gold-300 hover:border-gold-400">
+                    Kanjeevaram Bridal
+                </button>
+                <button onclick="filterGallery('banarasi')" class="filter-btn px-5 py-2.5 rounded-full font-cinzel text-xs font-semibold uppercase tracking-wider transition-all duration-300 border border-gold-500/30 text-gold-300 hover:border-gold-400">
+                    Banarasi Brocade
+                </button>
+                <button onclick="filterGallery('mysore')" class="filter-btn px-5 py-2.5 rounded-full font-cinzel text-xs font-semibold uppercase tracking-wider transition-all duration-300 border border-gold-500/30 text-gold-300 hover:border-gold-400">
+                    Mysore Crepe Silk
+                </button>
+                <button onclick="filterGallery('tussar')" class="filter-btn px-5 py-2.5 rounded-full font-cinzel text-xs font-semibold uppercase tracking-wider transition-all duration-300 border border-gold-500/30 text-gold-300 hover:border-gold-400">
+                    Organza & Tussar
+                </button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Dynamic Content Injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- VIP Video Shopping / Consultation Banner -->
+    <section class="py-16 bg-gradient-to-r from-maroon-900 via-maroon-800 to-maroon-900 relative border-y border-gold-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+                <div class="space-y-4 text-center lg:text-left max-w-2xl">
+                    <span class="bg-gold-500/10 text-gold-300 text-xs uppercase font-cinzel px-3 py-1 rounded-full border border-gold-500/30 tracking-widest">
+                        Personalized Shopping Experience
+                    </span>
+                    <h3 class="font-cinzel text-2xl sm:text-4xl font-bold text-white tracking-wide">
+                        Book a Live WhatsApp Video Call
+                    </h3>
+                    <p class="text-amber-100/80 text-sm leading-relaxed">
+                        Cannot visit our physical store in person? Our master drape consultants will show you any saree live on video, giving you a real-time view of zari sheen, border drape, and pallu detail.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
+                    <a href="https://wa.me/919876543210?text=Hi%20Nandini%20Silks,%20I%20would%20like%20to%20schedule%20a%20live%20video%20call%20shopping%20session." 
+                       target="_blank" 
+                       class="bg-emerald-600 hover:bg-emerald-500 text-white font-cinzel font-bold px-8 py-4 rounded-full text-xs uppercase tracking-widest shadow-xl flex items-center justify-center gap-3 transition-all">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Schedule Video Call
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Silk Weaving Craftsmanship & Purity Section -->
+    <section id="craft" class="py-20 bg-maroon-950 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <p class="font-vibes text-3xl text-gold-300">Unmatched Quality</p>
+                <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white tracking-wider uppercase">
+                    The Nandini Hallmark
+                </h2>
+                <div class="w-16 h-0.5 bg-gold-400 mx-auto mt-3"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-maroon-900/40 p-8 rounded-2xl border border-gold-500/20 text-center hover:border-gold-400/50 transition-all group">
+                    <div class="w-16 h-16 rounded-full bg-gold-500/10 border border-gold-400 flex items-center justify-center mx-auto mb-6 text-gold-400 text-2xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-scroll"></i>
+                    </div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-3 uppercase tracking-wider">Silk Mark Certified</h3>
+                    <p class="text-amber-100/70 text-xs sm:text-sm leading-relaxed">
+                        Every single saree comes with official Silk Mark certification, guaranteeing 100% natural, pure mulberry silk threads.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-maroon-900/40 p-8 rounded-2xl border border-gold-500/20 text-center hover:border-gold-400/50 transition-all group">
+                    <div class="w-16 h-16 rounded-full bg-gold-500/10 border border-gold-400 flex items-center justify-center mx-auto mb-6 text-gold-400 text-2xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-3 uppercase tracking-wider">Tested Pure Zari</h3>
+                    <p class="text-amber-100/70 text-xs sm:text-sm leading-relaxed">
+                        Woven with pure silver alloys dipped in 24k gold, creating opulent borders that do not tarnish for generations.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-maroon-900/40 p-8 rounded-2xl border border-gold-500/20 text-center hover:border-gold-400/50 transition-all group">
+                    <div class="w-16 h-16 rounded-full bg-gold-500/10 border border-gold-400 flex items-center justify-center mx-auto mb-6 text-gold-400 text-2xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-3 uppercase tracking-wider">Custom Blouse Tailoring</h3>
+                    <p class="text-amber-100/70 text-xs sm:text-sm leading-relaxed">
+                        In-house bridal tailors provide customized hand-embroidery, Aari work, and precise fitting for all purchased sarees.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Client Reviews -->
+    <section class="py-20 bg-maroon-900/30 border-t border-gold-500/20">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <p class="font-vibes text-3xl text-gold-300">Words From Our Brides</p>
+            <h2 class="font-cinzel text-3xl font-bold text-white tracking-widest uppercase mb-12">
+                Client Experiences
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                <div class="bg-maroon-950 p-6 rounded-2xl border border-gold-500/20 shadow-xl space-y-4">
+                    <div class="flex text-gold-400 gap-1 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-amber-100/80 text-xs sm:text-sm italic">
+                        "I ordered my bridal Muhurtham Kanjeevaram through their live video shopping feature. The saree arrived packaged beautifully, and the real gold zari shine in person was absolutely breathtaking!"
+                    </p>
+                    <div class="pt-2 border-t border-gold-500/10 flex justify-between items-center text-xs">
+                        <span class="font-cinzel text-gold-300 font-bold">Ananya R. Sharma</span>
+                        <span class="text-amber-100/50">Bengaluru</span>
+                    </div>
+                </div>
+
+                <div class="bg-maroon-950 p-6 rounded-2xl border border-gold-500/20 shadow-xl space-y-4">
+                    <div class="flex text-gold-400 gap-1 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-amber-100/80 text-xs sm:text-sm italic">
+                        "Nandini Silks has been our family's trusted boutique for over 15 years. Their Banarasi brocade sarees are heirloom quality. Unbeatable authenticity and service."
+                    </p>
+                    <div class="pt-2 border-t border-gold-500/10 flex justify-between items-center text-xs">
+                        <span class="font-cinzel text-gold-300 font-bold">Priya Vignesh</span>
+                        <span class="text-amber-100/50">Chennai</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact Section -->
+    <footer id="contact" class="bg-maroon-950 border-t border-gold-500/30 text-amber-100/80 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <!-- Brand Info -->
+                <div class="space-y-4 md:col-span-1">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full border border-gold-400 flex items-center justify-center bg-maroon-900">
+                            <span class="font-vibes text-2xl text-gold-400">N</span>
+                        </div>
+                        <h3 class="font-cinzel text-lg font-bold gold-gradient-text uppercase">Nandini Silks</h3>
+                    </div>
+                    <p class="text-xs leading-relaxed text-amber-100/70">
+                        Heritage handloom silk boutique specializing in authentic Kanjeevarams, Banarasis, and handcrafted bridal wear.
+                    </p>
+                    <div class="flex gap-4 text-gold-400 text-lg">
+                        <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="https://wa.me/919876543210" class="hover:text-white transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Boutique Visit Info -->
+                <div>
+                    <h4 class="font-cinzel text-sm font-bold text-white uppercase tracking-wider mb-4 border-b border-gold-500/20 pb-2">
+                        Main Flagship Boutique
+                    </h4>
+                    <ul class="space-y-2 text-xs">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-location-dot text-gold-400 mt-0.5"></i>
+                            <span>#108 Royal Heritage Arcade, MG Road, Bengaluru, Karnataka - 560001</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-gold-400"></i>
+                            <span>Mon - Sun: 10:30 AM - 8:30 PM</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-gold-400"></i>
+                            <span>+91 98765 43210 / 080-25589000</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Navigation -->
+                <div>
+                    <h4 class="font-cinzel text-sm font-bold text-white uppercase tracking-wider mb-4 border-b border-gold-500/20 pb-2">
+                        Collections
+                    </h4>
+                    <ul class="space-y-2 text-xs font-cinzel">
+                        <li><a href="#collections" onclick="filterGallery('kanjeevaram')" class="hover:text-gold-400">Bridal Kanjeevarams</a></li>
+                        <li><a href="#collections" onclick="filterGallery('banarasi')" class="hover:text-gold-400">Banarasi Brocades</a></li>
+                        <li><a href="#collections" onclick="filterGallery('mysore')" class="hover:text-gold-400">Mysore Soft Silks</a></li>
+                        <li><a href="#collections" onclick="filterGallery('tussar')" class="hover:text-gold-400">Organza & Contemporary</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter / VIP Booking -->
+                <div>
+                    <h4 class="font-cinzel text-sm font-bold text-white uppercase tracking-wider mb-4 border-b border-gold-500/20 pb-2">
+                        Bridal VIP Inquiry
+                    </h4>
+                    <p class="text-xs mb-3">Leave your phone number to receive our seasonal bridal lookbook catalog via WhatsApp.</p>
+                    <form onsubmit="handleInquirySubmit(event)" class="space-y-2">
+                        <input type="tel" placeholder="+91 Your Phone Number" required class="w-full bg-maroon-900/80 border border-gold-500/30 rounded-md px-3 py-2 text-xs text-white placeholder-amber-100/40 focus:outline-none focus:border-gold-400">
+                        <button type="submit" class="w-full bg-gold-500 hover:bg-gold-400 text-maroon-950 font-cinzel font-bold py-2 rounded-md text-xs uppercase tracking-wider transition-colors">
+                            Request Lookbook PDF
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="pt-8 border-t border-gold-500/10 text-center text-xs text-amber-100/50 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>© 2026 Nandini Silks Boutique. All Rights Reserved. Pure Handloom Authentic Silks.</p>
+                <div class="flex gap-4">
+                    <span class="hover:text-gold-400 cursor-pointer">Silk Mark Guild</span>
+                    <span>•</span>
+                    <span class="hover:text-gold-400 cursor-pointer">Privacy Policy</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Saree Detail & Drape Preview Modal -->
+    <div id="preview-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-maroon-950 border-2 border-gold-400 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative">
+            <!-- Close Button -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-maroon-900 border border-gold-400 text-gold-400 hover:bg-gold-500 hover:text-maroon-950 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 sm:p-8">
+                <!-- Modal Image Section -->
+                <div class="space-y-3">
+                    <div class="rounded-xl overflow-hidden border border-gold-500/30 bg-maroon-900 relative">
+                        <img id="modal-image" src="" alt="Saree Preview" class="w-full h-96 object-cover">
+                        <span id="modal-tag" class="absolute top-3 left-3 bg-gold-500 text-maroon-950 font-cinzel text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
+                            Silk Mark
+                        </span>
+                    </div>
+                    <p class="text-[11px] text-amber-100/60 text-center italic">
+                        <i class="fa-solid fa-magnifying-glass"></i> Handwoven authentic zari texture detail
+                    </p>
+                </div>
+
+                <!-- Modal Content Section -->
+                <div class="flex flex-col justify-between space-y-4">
+                    <div>
+                        <div id="modal-category" class="text-gold-400 font-cinzel text-xs tracking-widest uppercase mb-1">
+                            Category
+                        </div>
+                        <h3 id="modal-title" class="font-cinzel text-2xl font-bold text-white mb-2">
+                            Saree Name
+                        </h3>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span id="modal-price" class="text-2xl font-bold text-gold-300">₹0</span>
+                            <span class="text-xs text-emerald-400 bg-emerald-950/80 px-2.5 py-0.5 rounded border border-emerald-500/30">In Stock • Ships Worldwide</span>
+                        </div>
+                        <p id="modal-desc" class="text-amber-100/80 text-xs sm:text-sm leading-relaxed mb-4">
+                            Detailed description goes here...
+                        </p>
+
+                        <!-- Saree Specs List -->
+                        <div class="bg-maroon-900/60 rounded-xl p-4 border border-gold-500/20 space-y-2 text-xs">
+                            <div class="flex justify-between border-b border-gold-500/10 pb-1">
+                                <span class="text-amber-100/60">Weave Type:</span>
+                                <span id="modal-weave" class="text-gold-300 font-medium">Kanchipuram Handloom</span>
+                            </div>
+                            <div class="flex justify-between border-b border-gold-500/10 pb-1">
+                                <span class="text-amber-100/60">Blouse Piece:</span>
+                                <span class="text-amber-100">Included (Unstitched 80cm)</span>
+                            </div>
+                            <div class="flex justify-between border-b border-gold-500/10 pb-1">
+                                <span class="text-amber-100/60">Zari Purity:</span>
+                                <span class="text-amber-100">Tested 2g Silver Zari</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-amber-100/60">Certification:</span>
+                                <span class="text-gold-400 font-bold">Silk Mark Verified</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="space-y-3 pt-4">
+                        <a id="modal-whatsapp-btn" href="#" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-cinzel font-bold py-3.5 rounded-xl text-xs uppercase tracking-widest flex items-center justify-center gap-2 shadow-lg transition-all">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Inquire / Book Saree via WhatsApp
+                        </a>
+                        <button id="modal-wishlist-btn" onclick="toggleWishlistFromModal()" class="w-full border border-gold-400 text-gold-300 hover:bg-gold-500 hover:text-maroon-950 font-cinzel font-semibold py-3 rounded-xl text-xs uppercase tracking-widest transition-all">
+                            <i class="fa-regular fa-heart mr-1"></i> Add to Favorite Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wishlist Drawer / Modal -->
+    <div id="wishlist-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex justify-end">
+        <div class="bg-maroon-950 w-full max-w-md h-full border-l border-gold-500/30 p-6 flex flex-col justify-between overflow-y-auto">
+            <div>
+                <div class="flex justify-between items-center pb-4 border-b border-gold-500/20 mb-6">
+                    <h3 class="font-cinzel text-xl font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-heart text-gold-400"></i> My Saved Sarees
+                    </h3>
+                    <button onclick="closeWishlistModal()" class="text-amber-100 hover:text-gold-400 text-xl">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div id="wishlist-items-container" class="space-y-4">
+                    <!-- Wishlist dynamic items -->
+                </div>
+            </div>
+
+            <div class="pt-6 border-t border-gold-500/20 space-y-3">
+                <a id="wishlist-whatsapp-all" href="https://wa.me/919876543210?text=Hello%20Nandini%20Silks,%20I%20would%20like%20to%20inquire%20about%20my%20wishlisted%20sarees." target="_blank" class="w-full bg-gradient-to-r from-gold-500 to-gold-600 text-maroon-950 font-cinzel font-bold py-3.5 rounded-xl text-xs uppercase tracking-widest flex items-center justify-center gap-2 shadow-lg">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Inquire Saved Sarees on WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Data & Interactivity -->
+    <script>
+        // Catalog Saree Dataset
+        const sareeCatalog = [
+            {
+                id: 'saree-1',
+                title: 'Swarna Lakshmi Bridal Kanjeevaram',
+                category: 'kanjeevaram',
+                categoryLabel: 'Kanjeevaram Silk',
+                price: '₹48,500',
+                image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800',
+                description: 'Rich crimson red silk with intricate Mayil (peacock) and Korvai golden zari border. Handwoven for traditional Muhurtham rituals.',
+                weave: 'Korvai Handloom Pure Silk'
+            },
+            {
+                id: 'saree-2',
+                title: 'Shahi Royal Banarasi Kadwa Brocade',
+                category: 'banarasi',
+                categoryLabel: 'Banarasi Silk',
+                price: '₹36,000',
+                image: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&q=80&w=800',
+                description: 'Midnight blue Banarasi silk adorned with dense golden zari Jaal artwork and floral vines.',
+                weave: 'Varanasi Kadwa Weave'
+            },
+            {
+                id: 'saree-3',
+                title: 'Maharani Emerald Green Kanjeevaram',
+                category: 'kanjeevaram',
+                categoryLabel: 'Kanjeevaram Silk',
+                price: '₹52,000',
+                image: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&q=80&w=800',
+                description: 'Deep royal emerald green background with heavy temple border in solid 24k dip gold zari.',
+                weave: 'Pure Mulberry Kanchipuram'
+            },
+            {
+                id: 'saree-4',
+                title: 'Royal Purple Mysore Crepe Silk',
+                category: 'mysore',
+                categoryLabel: 'Mysore Silk',
+                price: '₹18,500',
+                image: 'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&q=80&w=800',
+                description: 'Lightweight, lustrous deep purple pure crepe silk with subtle gold zari border. Elegant and soft on skin.',
+                weave: 'Govt. Mysore Silk Weave'
+            },
+            {
+                id: 'saree-5',
+                title: 'Pastel Peach Floral Organza Silk',
+                category: 'tussar',
+                categoryLabel: 'Organza & Tussar',
+                price: '₹22,400',
+                image: 'https://images.unsplash.com/photo-1610030469668-932dd0b66412?auto=format&fit=crop&q=80&w=800',
+                description: 'Ethereal sheer pastel pink-peach organza saree featuring hand-painted floral motifs and zari piping.',
+                weave: 'Hand-painted Organza Silk'
+            },
+            {
+                id: 'saree-6',
+                title: 'Rani Pink Mughal Tanchoi Silk',
+                category: 'banarasi',
+                categoryLabel: 'Banarasi Silk',
+                price: '₹29,800',
+                image: 'https://images.unsplash.com/photo-1583391733975-ac826b52a420?auto=format&fit=crop&q=80&w=800',
+                description: 'Vibrant Rani pink silk with self-patterned Tanchoi weaving and contrast gold zari pallu.',
+                weave: 'Banarasi Tanchoi'
+            },
+            {
+                id: 'saree-7',
+                title: 'Golden Ochre Heritage Tussar Silk',
+                category: 'tussar',
+                categoryLabel: 'Organza & Tussar',
+                price: '₹16,900',
+                image: 'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&q=80&w=800',
+                description: 'Organic raw tussar silk in warm honey golden hue, featuring block-printed tribal motifs and zari borders.',
+                weave: 'Wild Tussar Handloom'
+            },
+            {
+                id: 'saree-8',
+                title: 'Ganga-Jamuna Contrast Border Kanjeevaram',
+                category: 'kanjeevaram',
+                categoryLabel: 'Kanjeevaram Silk',
+                price: '₹44,000',
+                image: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&q=80&w=800',
+                description: 'Unique dual-colored borders in ruby red and emerald green framing a golden mustard silk body.',
+                weave: 'Dual Border Kanchipuram'
+            }
+        ];
+
+        let wishlist = [];
+        let currentActiveSaree = null;
+
+        // Render Gallery Items
+        function renderGallery(filter = 'all') {
+            const container = document.getElementById('gallery-grid');
+            container.innerHTML = '';
+
+            const itemsToDisplay = filter === 'all' 
+                ? sareeCatalog 
+                : sareeCatalog.filter(item => item.category === filter);
+
+            itemsToDisplay.forEach(saree => {
+                const isWishlisted = wishlist.includes(saree.id);
+                const card = document.createElement('div');
+                card.className = "bg-maroon-900/40 rounded-2xl overflow-hidden border border-gold-500/20 hover:border-gold-400 transition-all duration-300 shadow-xl flex flex-col group";
+                
+                card.innerHTML = `
+                    <div class="relative overflow-hidden cursor-pointer" onclick="openModal('${saree.id}')">
+                        <img src="${saree.image}" alt="${saree.title}" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-maroon-950 via-transparent to-transparent opacity-60"></div>
+                        
+                        <span class="absolute top-3 left-3 bg-maroon-950/80 backdrop-blur-md text-gold-300 border border-gold-500/30 text-[10px] font-cinzel font-bold px-2.5 py-1 rounded-full uppercase">
+                            ${saree.categoryLabel}
+                        </span>
+
+                        <button onclick="event.stopPropagation(); toggleWishlist('${saree.id}')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-maroon-950/80 border border-gold-500/30 text-gold-400 flex items-center justify-center hover:scale-110 transition-transform">
+                            <i class="${isWishlisted ? 'fa-solid text-gold-400' : 'fa-regular'} fa-heart"></i>
+                        </button>
+
+                        <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+                            <span class="text-xs bg-gold-500 text-maroon-950 font-bold px-2.5 py-1 rounded font-cinzel">
+                                Silk Mark
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="p-5 flex flex-col flex-grow justify-between space-y-3">
+                        <div>
+                            <h3 onclick="openModal('${saree.id}')" class="font-cinzel text-base font-bold text-white hover:text-gold-300 cursor-pointer transition-colors line-clamp-1">
+                                ${saree.title}
+                            </h3>
+                            <p class="text-amber-100/60 text-xs line-clamp-2 mt-1">
+                                ${saree.description}
+                            </p>
+                        </div>
+
+                        <div class="pt-3 border-t border-gold-500/10 flex items-center justify-between">
+                            <span class="font-cinzel text-lg font-bold text-gold-300">${saree.price}</span>
+                            
+                            <button onclick="openModal('${saree.id}')" class="bg-maroon-950 border border-gold-400 text-gold-400 hover:bg-gold-500 hover:text-maroon-950 px-3 py-1.5 rounded-md text-xs font-cinzel font-semibold uppercase tracking-wider transition-all">
+                                Preview
+                            </button>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Filter Function
+        function filterGallery(category) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('bg-gold-500', 'text-maroon-950', 'shadow-lg');
+                btn.classList.add('border', 'border-gold-500/30', 'text-gold-300');
+            });
+
+            event.target.classList.remove('border', 'border-gold-500/30', 'text-gold-300');
+            event.target.classList.add('bg-gold-500', 'text-maroon-950', 'shadow-lg');
+
+            renderGallery(category);
+        }
+
+        // Open Detail Modal
+        function openModal(sareeId) {
+            const saree = sareeCatalog.find(s => s.id === sareeId);
+            if (!saree) return;
+
+            currentActiveSaree = saree;
+
+            document.getElementById('modal-image').src = saree.image;
+            document.getElementById('modal-title').textContent = saree.title;
+            document.getElementById('modal-category').textContent = saree.categoryLabel;
+            document.getElementById('modal-price').textContent = saree.price;
+            document.getElementById('modal-desc').textContent = saree.description;
+            document.getElementById('modal-weave').textContent = saree.weave;
+
+            const waMsg = encodeURIComponent(`Hello Nandini Silks, I am interested in inquiring about the "${saree.title}" (${saree.price}). Please send me available colors and video preview.`);
+            document.getElementById('modal-whatsapp-btn').href = `https://wa.me/919876543210?text=${waMsg}`;
+
+            updateModalWishlistBtn();
+
+            document.getElementById('preview-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('preview-modal').classList.add('hidden');
+        }
+
+        // Wishlist Logic
+        function toggleWishlist(sareeId) {
+            if (wishlist.includes(sareeId)) {
+                wishlist = wishlist.filter(id => id !== sareeId);
+            } else {
+                wishlist.push(sareeId);
+            }
+            updateWishlistBadge();
+            renderGallery();
+        }
+
+        function toggleWishlistFromModal() {
+            if (currentActiveSaree) {
+                toggleWishlist(currentActiveSaree.id);
+                updateModalWishlistBtn();
+            }
+        }
+
+        function updateModalWishlistBtn() {
+            const btn = document.getElementById('modal-wishlist-btn');
+            if (currentActiveSaree && wishlist.includes(currentActiveSaree.id)) {
+                btn.innerHTML = `<i class="fa-solid fa-heart text-gold-400 mr-1"></i> Saved to Wishlist`;
+                btn.classList.add('bg-gold-500/10');
+            } else {
+                btn.innerHTML = `<i class="fa-regular fa-heart mr-1"></i> Add to Favorite Wishlist`;
+                btn.classList.remove('bg-gold-500/10');
+            }
+        }
+
+        function updateWishlistBadge() {
+            document.getElementById('wishlist-badge').textContent = wishlist.length;
+        }
+
+        function openWishlistModal() {
+            const container = document.getElementById('wishlist-items-container');
+            container.innerHTML = '';
+
+            if (wishlist.length === 0) {
+                container.innerHTML = `<p class="text-xs text-amber-100/60 text-center py-8">Your wishlist is currently empty. Tap the heart on any saree to save it!</p>`;
+            } else {
+                wishlist.forEach(id => {
+                    const saree = sareeCatalog.find(s => s.id === id);
+                    if (saree) {
+                        const item = document.createElement('div');
+                        item.className = "flex gap-3 bg-maroon-900/50 p-3 rounded-xl border border-gold-500/20 items-center justify-between";
+                        item.innerHTML = `
+                            <img src="${saree.image}" alt="${saree.title}" class="w-14 h-14 object-cover rounded-md">
+                            <div class="flex-grow">
+                                <h4 class="font-cinzel text-xs font-bold text-white">${saree.title}</h4>
+                                <span class="text-xs text-gold-300 font-bold">${saree.price}</span>
+                            </div>
+                            <button onclick="toggleWishlist('${saree.id}'); openWishlistModal();" class="text-amber-100 hover:text-red-400 text-sm">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        `;
+                        container.appendChild(item);
+                    }
+                });
+            }
+
+            document.getElementById('wishlist-modal').classList.remove('hidden');
+        }
+
+        function closeWishlistModal() {
+            document.getElementById('wishlist-modal').classList.add('hidden');
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Form Submission
+        function handleInquirySubmit(event) {
+            event.preventDefault();
+            alert('Thank you! Your inquiry has been sent to our boutique manager. We will share the catalog on WhatsApp shortly.');
+            event.target.reset();
+        }
+
+        // Initialize on load
+        window.onload = function() {
+            renderGallery('all');
+        };
+    </script>
+</body>
+</html>
